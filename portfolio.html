@@ -13,22 +13,30 @@
 </head>
 
 <body>
+  <!-- start of header element -->
   <header class="header-container">
     <a href="#">
       <div class="admin-container">
-        <img class="admin-img" src="./images/robot.png">
+        <img src="./images/robot.png" alt="Vujadin's image">
         <p>Vujadin Dagovic</p>
       </div>
     </a>
     <nav class="info-container">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href='#'>About</li></a>
-        <li><a href='#'>Projects</li></a>
-        <li><a href='#'>Contact</li></a>
+        <li><a href="#"><span class="code">
+              < </span>Home<span class="code"> /></span></a></li>
+        <li><a href="#about"><span class="code">
+              < </span>About<span class="code"> /></span></a></li>
+        <li><a href="#"><span class="code">
+              < </span>Projects<span class="code"> /></span></a></li>
+        <li><a href="#"><span class="code">
+              < </span>Contact<span class="code"> /></span></a></li>
       </ul>
     </nav>
   </header>
+  <!-- end of header element -->
+
+  <!-- start of hero section -->
   <section class="hero-section">
     <div class="social-media">
       <a class="social-media-link" href="#">
@@ -46,13 +54,23 @@
         <img class="social-media-icon" src="./images/social-media/insta-ico.png" />
       </a>
     </div>
-    <div class="hero-introduction-text"></div>
-    <h1 class="hero-main-heading">Hey, my name is Vujadin Dagovic</h1>
+    <div class="hero-introduction-text">
+      <h1>Hey, my name is Vujadin</h1>
+      <p>I am frontend developer located in Serbia.</p>
+      <button class="hero-btn"><a href="#">Projects</a></button>
+
+    </div>
+    <div class="hero-mouse-scroll">
+      <div class="mouse-before"></div>
+    </div>
+  </section>
+  <!-- start of hero section -->
+
+  <section class="about-section">
+    <h1 id="about">About me</h1>
   </section>
 
-  <section class="some-text">
-    <p>some text</p>
-  </section>
+
 
 
   <script src="./portfolio.js"></script>
