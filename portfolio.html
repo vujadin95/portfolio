@@ -15,24 +15,34 @@
 <body>
   <!-- start of header element -->
   <header class="header-container">
-    <a href="#">
-      <div class="admin-container">
-        <img src="./images/robot.png" alt="Vujadin's image">
+
+    <div class="admin-container">
+      <img src="./images/robot.png" alt="Vujadin's image">
+      <a href="#">
         <p>Vujadin Dagovic</p>
-      </div>
-    </a>
-    <nav class="info-container">
-      <ul>
-        <li><a href="#"><span class="code">
-              < </span>Home<span class="code"> /></span></a></li>
-        <li><a href="#about"><span class="code">
-              < </span>About<span class="code"> /></span></a></li>
-        <li><a href="#"><span class="code">
-              < </span>Projects<span class="code"> /></span></a></li>
-        <li><a href="#"><span class="code">
-              < </span>Contact<span class="code"> /></span></a></li>
-      </ul>
-    </nav>
+      </a>
+    </div>
+
+    <div class="header-menu-icon-wrapper">
+      <img src="./images/svg/ham-menu.svg" alt="" class="header-menu-icon">
+    </div>
+
+    <!-- <nav class="info-container"> -->
+    <!-- class="info-container-column full-width" -->
+    <ul class="info-container">
+      <li><a href="#"><span class="code">
+            < </span>Home<span class="code"> /></span></a></li>
+      <li><a href="#about"><span class="code">
+            < </span>About<span class="code"> /></span></a></li>
+      <li><a href="#"><span class="code">
+            < </span>Projects<span class="code"> /></span></a></li>
+      <li><a href="#"><span class="code">
+            < </span>Contact<span class="code"> /></span></a></li>
+    </ul>
+    <!-- </nav> -->
+
+
+
   </header>
   <!-- end of header element -->
 
@@ -58,19 +68,58 @@
       <h1>Hey, my name is Vujadin</h1>
       <p>I am frontend developer located in Serbia.</p>
       <button class="hero-btn"><a href="#">Projects</a></button>
-
     </div>
     <div class="hero-mouse-scroll">
       <div class="mouse-before"></div>
     </div>
   </section>
-  <!-- start of hero section -->
+  <!-- end of hero section -->
 
+  <!-- start of about section -->
   <section class="about-section">
-    <h1 id="about">About me</h1>
+    <div class="heading-wrapper">
+      <h1 class="about-section-heading" id="about">About me</h1>
+      <p class="about-section-desc">Born and raised in Kragujevac, Serbia, I like think of myself as a person in
+        constant
+        chase for knowledge. That
+        knowledge could be anything that I take interest in and one of that things is coding.</p>
+    </div>
+    <div class="about-section-main-content">
+      <div class="get-to-know-me">
+        <h2 class="get-to-know-me-heading">Get to know me!</h2>
+        <p class="get-to-know-me-text">Hey! It's <span>John Doe</span> and I'm a <span>Frontend Web Developer</span>
+          located in Los Angeles. I've
+          done remote projects for
+          agencies, consulted for startups, and collaborated with talented people to create digital products for both
+          business and consumer use.</p>
+        <p class="get-to-know-me-text">I'm a bit of a digital product junky. Over the years, I've used hundreds of web
+          and mobile apps in
+          different
+          industries and verticals. Feel free to contact me here. </p>
+        <a href="#" class="about-section-contact-btn">Contact</a>
+      </div>
+      <div class="skills">
+        <h2 class="skill-heading">My Skills</h2>
+        <div class="skills-wrapper">
+          <div class="skill"><span class="code-about">
+              < </span>HTML<span class="code-about"> /></span></div>
+          <div class="skill"><span class="code-about">
+              < </span>CSS<span class="code-about"> /></span></div>
+          <div class="skill"><span class="code-about">
+              < </span>JavaScript<span class="code-about"> /></span></div>
+          <div class="skill"><span class="code-about">
+              < </span>React<span class="code-about"> /></span></div>
+          <div class="skill"><span class="code-about">
+              < </span>Git<span class="code-about"> /></span></div>
+          <div class="skill"><span class="code-about">
+              < </span>GitHub<span class="code-about"> /></span></div>
+          <div class="skill"><span class="code-about">
+              < </span>VSCode<span class="code-about"> /></span></div>
+        </div>
+      </div>
+    </div>
   </section>
-
-
+  <!-- end of about section -->
 
 
   <script src="./portfolio.js"></script>
