@@ -36,7 +36,9 @@ body {
   width: 100%;
   padding: 0.625em 3.125em;
   position: fixed;
-  z-index: 1;
+  top: 0;
+  left: 0;
+  z-index: 1000;
   cursor: pointer;
 }
 
@@ -385,7 +387,6 @@ body {
   }
 }
 
-
 @keyframes mouse-animation {
   from {
     top: 7px;
@@ -453,7 +454,6 @@ body {
 .about-section-main-content {
   display: flex;
   justify-content: center;
-  /* flex-wrap: wrap; */
   gap: 10rem;
 }
 
@@ -623,6 +623,7 @@ body {
 @media (width <=600px) {
   .about-section {
     padding: 7.168rem 0;
+    height: unset;
     gap: 8rem;
   }
 
@@ -635,7 +636,6 @@ body {
     font-size: 2.15rem;
     margin-bottom: 2.6rem;
   }
-
 
   .about-section-heading::after {
     display: none;
