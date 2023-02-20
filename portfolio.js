@@ -27,5 +27,5 @@ document.querySelectorAll(".nav-link").forEach((n) =>
 homePage.addEventListener("click", realoadHomePage);
 
 function realoadHomePage() {
-  location.href = "portfolio.html";
+  location.href = "index.html";
 }

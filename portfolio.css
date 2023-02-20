@@ -641,3 +641,38 @@ body {
     display: none;
   }
 }
+
+/* start projects section */
+
+.projects-container {
+  width: 92%;
+  margin: 0 auto;
+  max-width: 1248px;
+  padding: 12rem 0;
+  border: 1px solid var(--light-color-text);
+}
+
+.projects-heading {
+  font-size: 4rem;
+}
+
+.all-projects-desc {
+  font-size: 2rem;
+}
+
+.projects-wrapper {
+  display: flex;
+  gap: 5rem;
+}
+
+.projects-image-wrapper {
+  width: 50%;
+}
+
+.project-image {
+  width: 100%;
+}
+
+.projects-text-wrapper {
+  width: 30%;
+}
