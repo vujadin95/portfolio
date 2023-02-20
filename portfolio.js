@@ -1,6 +1,8 @@
 const menuIcon = document.querySelector(".menu-icon-wrapper");
 const links = document.querySelector(".links-container");
 const menuIconType = document.querySelector(".menu-icon");
+const homePage = document.querySelector("#home-page");
+
 let isToggled = false;
 
 menuIcon.addEventListener("click", function () {
@@ -21,3 +23,9 @@ document.querySelectorAll(".nav-link").forEach((n) =>
     menuIconType.src = "./images/svg/ham-menu.svg";
   })
 );
+
+homePage.addEventListener("click", realoadHomePage);
+
+function realoadHomePage() {
+  location.href = "portfolio.html";
+}

@@ -174,6 +174,20 @@ body {
   }
 }
 
+@media(width <=320px) {
+  .menu-icon-wrapper {
+    padding: 0.3em;
+  }
+
+  .menu-icon {
+    width: 18px;
+  }
+
+  .logo-container {
+    font-size: 1.2rem;
+  }
+}
+
 /* end responsive design for header element */
 /* end of header element */
 
@@ -183,6 +197,9 @@ body {
   width: 100%;
   height: 100vh;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .social-media {
@@ -192,6 +209,7 @@ body {
   border: 2px solid #eee;
   position: absolute;
   top: 50%;
+  left: 0;
   transform: translateY(-50%);
 }
 
@@ -216,29 +234,23 @@ body {
   width: 2.6rem;
 }
 
-@media(width <=900px) {
-  .social-media {
-    display: none;
-  }
-}
-
 .hero-introduction-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   text-align: center;
+  flex-wrap: wrap;
+  gap: 3.5em;
 }
 
 .hero-introduction-text h1 {
   font-size: 6rem;
   text-transform: uppercase;
-  line-height: 1.5;
 }
 
 .hero-introduction-text p {
   font-size: 2.2rem;
-  margin-top: 1.35em;
 }
 
 .hero-btn {
@@ -249,7 +261,6 @@ body {
   background-color: var(--light-color-text);
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 50px;
   transition: all 0.3s ease-out;
   border: none;
 }
@@ -289,6 +300,92 @@ body {
   animation: mouse-animation 1.3s infinite;
 }
 
+@media (width <=1200px) {
+  .social-media-icon {
+    width: 2.456rem;
+  }
+
+  .social-media-link {
+    padding: 1.138em;
+    border-bottom: 2px solid #eee;
+  }
+
+  .hero-introduction-text h1 {
+    font-size: 5.664rem;
+  }
+
+  .hero-introduction-text p {
+    font-size: 2.0768rem;
+  }
+
+  .hero-btn {
+    font-size: 1.888rem;
+    padding: 1.4rem 7.5rem;
+  }
+}
+
+@media(width <=900px) {
+  .hero-introduction-text {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+
+  .hero-introduction-text h1 {
+    font-size: 5.376rem;
+  }
+
+  .social-media {
+    display: none;
+  }
+
+  .hero-introduction-text p {
+    font-size: 1.9712rem;
+  }
+
+  .hero-btn {
+    font-size: 1.797rem;
+    padding: 1.3rem 7.1rem;
+  }
+}
+
+@media(width <=600px) {
+  .hero-introduction-text {
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .hero-introduction-text h1 {
+    font-size: 4.032rem;
+  }
+
+  .hero-introduction-text p {
+    font-size: 1.792rem;
+  }
+
+  .hero-btn {
+    font-size: 1.797rem;
+    padding: 1.3rem 7.1rem;
+  }
+
+  .hero-section {
+    height: auto;
+    padding: 170.24px 24px 116.48px;
+  }
+
+  .hero-mouse-scroll {
+    display: none;
+  }
+
+}
+
+@media(width <=320px) {
+  .hero-btn {
+    font-size: 1.797rem;
+    padding: 1.3rem 5.1rem;
+  }
+}
+
+
 @keyframes mouse-animation {
   from {
     top: 7px;
@@ -308,11 +405,13 @@ body {
   height: 100vh;
   width: 100%;
   padding: 12rem 0;
-  max-width: 1248px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+  max-width: 1248px;
+  width: 92%;
+  margin: 0 auto;
 }
 
 .heading-wrapper {
@@ -353,13 +452,12 @@ body {
 
 .about-section-main-content {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: center;
+  /* flex-wrap: wrap; */
   gap: 10rem;
 }
 
-.get-to-know-me {
-  max-width: 55rem;
+.get-to-know-me-container {
   flex: 1 1 0px;
 }
 
@@ -395,12 +493,14 @@ body {
   box-shadow: 1px 1px 35px 10px var(--dark-color-text);
 }
 
+.skills-container {
+  flex: 1 1 0px;
+}
+
 .skills-wrapper {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
-  max-width: 55rem;
-  flex: 1 1 0px;
 }
 
 .skill-heading {
@@ -416,6 +516,7 @@ body {
   border-radius: 5px;
   font-weight: 700;
   cursor: pointer;
+
 }
 
 .code-about {
@@ -424,4 +525,119 @@ body {
 
 .skill:hover .code-about {
   color: orangered;
+}
+
+@media (width <=1200px) {
+  .about-section {
+    padding: 11.328rem 0;
+  }
+
+  .about-section-heading {
+    font-size: 3.776rem;
+    margin-bottom: 3.304rem;
+  }
+
+  .about-section-desc {
+    font-size: 1.888rem;
+  }
+
+  .get-to-know-me-heading,
+  .skill-heading {
+    font-size: 2.6rem;
+    margin-bottom: 2.8rem;
+  }
+
+  .get-to-know-me-text {
+    font-size: 1.7rem;
+    margin-bottom: 0.95rem;
+  }
+
+  .about-section-contact-btn {
+    font-size: 1.5rem;
+    padding: 1.4rem 4.7rem;
+    margin-top: 2.75rem;
+  }
+
+  .skill {
+    font-size: 1.4rem;
+    padding: 0.95rem 1.9rem;
+  }
+
+  .skills-wrapper {
+    gap: 1.4rem;
+  }
+
+}
+
+
+@media (width <=900px) {
+  .about-section {
+    padding: 7.168rem 0;
+  }
+
+  .about-section-heading {
+    font-size: 3.58rem;
+    margin-bottom: 3.136rem;
+  }
+
+  .about-section-desc {
+    font-size: 1.792rem;
+  }
+
+  .about-section-main-content {
+    flex-direction: column;
+    gap: 8rem;
+  }
+
+  .about-section-heading::after {
+    top: calc(100% + 12rem);
+  }
+
+  .get-to-know-me-heading,
+  .skill-heading {
+    font-size: 2.5rem;
+    margin-bottom: 2.6rem;
+  }
+
+  .get-to-know-me-text {
+    font-size: 1.6rem;
+    margin-bottom: 0.9rem;
+  }
+
+  .about-section-contact-btn {
+    font-size: 1.5rem;
+    padding: 1.35rem 4.45rem;
+    margin-top: 2.6rem;
+  }
+
+  .skill {
+    font-size: 1.4rem;
+    padding: 0.99rem 1.8rem;
+  }
+
+  .skills-wrapper {
+    gap: 1.35rem;
+  }
+}
+
+@media (width <=600px) {
+  .about-section {
+    padding: 7.168rem 0;
+    gap: 8rem;
+  }
+
+  .about-section-desc {
+    font-size: 1.6rem;
+  }
+
+  .get-to-know-me-heading,
+  .skill-heading {
+    font-size: 2.15rem;
+    margin-bottom: 2.6rem;
+  }
+
+
+  .about-section-heading::after {
+    display: none;
+  }
 }
