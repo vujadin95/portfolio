@@ -32,7 +32,7 @@
             < </span>Home<span class="code"> /></span></a></li>
       <li><a class="nav-link" href="#about"><span class="code">
             < </span>About<span class="code"> /></span></a></li>
-      <li><a class="nav-link" href="#"><span class="code">
+      <li><a class="nav-link" href="#projects"><span class="code">
             < </span>Projects<span class="code"> /></span></a></li>
       <li><a class="nav-link" href="#"><span class="code">
             < </span>Contact<span class="code"> /></span></a></li>
@@ -62,7 +62,7 @@
     <div class="hero-introduction-text">
       <h1>Hey, my name is Vujadin</h1>
       <p>I am frontend developer located in Serbia.</p>
-      <button class="hero-btn"><a href="#">Projects</a></button>
+      <a href="#projects"><button class="hero-btn">Projects</button></a>
     </div>
     <div class="hero-mouse-scroll">
       <div class="mouse-before"></div>
@@ -113,20 +113,52 @@
     </div>
   </section>
   <!-- end of about section -->
-  <section class="projects-container">
-    <h1 class="projects-heading">Projects</h1>
-    <p class="all-projects-desc">All my projects include links to the code and live version. Click the button to learn
-      more about each one.</p>
-    <div class="projects-wrapper">
-      <div class="projects-image-wrapper">
-        <img src="./images/projects/quiz.jpg" alt="first-project-image" class="project-image">
+  <section class="projects-section" id="projects">
+    <div class="project-intro-text">
+      <h1 class="projects-heading">Projects</h1>
+      <p class="all-projects-desc">All my projects include links to the code and live version. Click the button to learn
+        more about each one.</p>
+    </div>
+    <div class="project-wrapper">
+      <div class="project-image-wrapper">
+        <a href="#">
+          <img src="./images/projects/quiz.jpg" alt="first-project-image" class="project-image">
+        </a>
       </div>
-      <div class="projects-text-wrapper">
+      <div class="project-text-wrapper">
         <h2 class="project-name">Quiz App</h2>
         <p class="project-desc">Quizzical is a simple quiz app that lets you select alternatives and then gives you a
           score. It's built with
           functional React components.</p>
-        <button class="learn-more-btn">Learn more</button>
+        <button class="project-btn">Learn more</button>
+      </div>
+    </div>
+
+    <div class="project-wrapper">
+      <div class="project-image-wrapper">
+        <a href="#">
+          <img src="./images/projects/dashboard.png" alt="first-project-image" class="project-image">
+        </a>
+      </div>
+      <div class="project-text-wrapper">
+        <h2 class="project-name">Personal Dashboard</h2>
+        <p class="project-desc">A Chrome Extension that gives you an overview over the current time, how the weather is
+          like and how Dogecoin is performing. Interacts with multiple APIs using async JS.</p>
+        <button class="project-btn">Learn more</button>
+      </div>
+    </div>
+
+    <div class="project-wrapper">
+      <div class="project-image-wrapper">
+        <a href="#">
+          <img src="./images/projects/password.jpg" alt="first-project-image" class="project-image">
+        </a>
+      </div>
+      <div class="project-text-wrapper">
+        <h2 class="project-name">Personal Dashboard</h2>
+        <p class="project-desc">A Chrome Extension that gives you an overview over the current time, how the weather is
+          like and how Dogecoin is performing. Interacts with multiple APIs using async JS.</p>
+        <button class="project-btn">Learn more</button>
       </div>
     </div>
 
