@@ -29,14 +29,10 @@
     </div>
 
     <ul class="links-container">
-      <li><a class="nav-link" href="#"><span class="code">
-            < </span>Home<span class="code"> /></span></a></li>
-      <li><a class="nav-link" href="#about"><span class="code">
-            < </span>About<span class="code"> /></span></a></li>
-      <li><a class="nav-link" href="#projects"><span class="code">
-            < </span>Projects<span class="code"> /></span></a></li>
-      <li><a class="nav-link" href="#contact"><span class="code">
-            < </span>Contact<span class="code"> /></span></a></li>
+      <li><a class="nav-link" href="#">Home</a></li>
+      <li><a class="nav-link" href="#about">About</a></li>
+      <li><a class="nav-link" href="#projects">Projects</a></li>
+      <li><a class="nav-link" href="#contact">Contact</a></li>
     </ul>
 
   </header>
@@ -63,7 +59,7 @@
     <div class="hero-introduction-text">
       <h1>Hey, my name is Vujadin</h1>
       <p>I am frontend developer located in Serbia.</p>
-      <a href="#projects"><button class="hero-btn">Projects</button></a>
+      <a href="#projects" class="hero-btn">Projects</a>
     </div>
     <div class="hero-mouse-scroll">
       <div class="mouse-before"></div>
@@ -81,11 +77,11 @@
     <div class="about-section-main-content">
       <div class="get-to-know-me-container">
         <h2 class="get-to-know-me-heading">Get to know me!</h2>
-        <p class="get-to-know-me-text">Hey! It's <span>John Doe</span> and I'm a <span>Frontend Web Developer</span>
-          located in Los Angeles. I've
-          done remote projects for
-          agencies, consulted for startups, and collaborated with talented people to create digital products for both
-          business and consumer use.</p>
+        <p class="get-to-know-me-text">Hey! It's <span>Vujadin Dagovic</span> and I'm a <span>Frontend Web
+            Developer</span>
+          located in Kragujevac, Serbia.
+          I've done some solo projects from various coding sites (Scrimba, freeCodeCamp,...) that I want to show you in
+          the next section. </p>
         <p class="get-to-know-me-text">I'm a bit of a digital product junky. Over the years, I've used hundreds of web
           and mobile apps in
           different
@@ -117,49 +113,56 @@
   <section class="projects-section" id="projects">
     <div class="project-intro-text">
       <h1 class="projects-heading">Projects</h1>
-      <p class="all-projects-desc">All my projects include links to the code and live version. Click the button to learn
-        more about each one.</p>
+      <p class="all-projects-desc">All my projects include links to live version. Click the button to visit site and to
+        see more about each one.</p>
     </div>
     <div class="project-wrapper">
       <div class="project-image-wrapper">
-        <a href="#">
-          <img src="./images/projects/quiz.jpg" alt="first-project-image" class="project-image">
+        <a href="https://exquisite-cucurucho-dbe9ac.netlify.app/" target="_blank">
+          <p class="badge">JavaScript</p>
+          <img src="./images/projects/role-playing-game.JPG" alt="role playing game project" class="project-image">
         </a>
       </div>
       <div class="project-text-wrapper">
-        <h2 class="project-name">Quiz App</h2>
-        <p class="project-desc">Quizzical is a simple quiz app that lets you select alternatives and then gives you a
-          score. It's built with
-          functional React components.</p>
-        <button class="project-btn">Learn more</button>
-      </div>
-    </div>
-
-    <div class="project-wrapper">
-      <div class="project-image-wrapper">
-        <a href="#">
-          <img src="./images/projects/dashboard.png" alt="first-project-image" class="project-image">
-        </a>
-      </div>
-      <div class="project-text-wrapper">
-        <h2 class="project-name">Personal Dashboard</h2>
-        <p class="project-desc">A Chrome Extension that gives you an overview over the current time, how the weather is
-          like and how Dogecoin is performing. Interacts with multiple APIs using async JS.</p>
-        <button class="project-btn">Learn more</button>
+        <h2 class="project-name">Role Playing Game</h2>
+        <p class="project-desc">Role Playing Game is javaScript app that presents mini game between wizard Merlin and
+          three monsters. First monster is the weakest and the last is the strongest. Risking and relying on the luck,
+          you have opportunity to defeat these horrible monsters. </p>
+        <a href="https://exquisite-cucurucho-dbe9ac.netlify.app/" target="_blank" class="project-btn">Visit site<i
+            class="fa-solid fa-arrow-right"></i></a>
       </div>
     </div>
 
     <div class="project-wrapper">
       <div class="project-image-wrapper">
-        <a href="#">
-          <img src="./images/projects/password.jpg" alt="first-project-image" class="project-image">
+        <a href="https://lucky-blancmange-e02202.netlify.app/" target="_blank">
+          <p class="badge">React</p>
+          <img src="./images/projects/todo-app.JPG" alt="to do app" class="project-image">
         </a>
       </div>
       <div class="project-text-wrapper">
-        <h2 class="project-name">Personal Dashboard</h2>
-        <p class="project-desc">A Chrome Extension that gives you an overview over the current time, how the weather is
-          like and how Dogecoin is performing. Interacts with multiple APIs using async JS.</p>
-        <button class="project-btn">Learn more</button>
+        <h2 class="project-name">To Do App</h2>
+        <p class="project-desc">For quick and short notes, I created To Do App in React. You have option to choose
+          priority for your notes and then sort them according that priority. Also, you can mark notes as checked and
+          disable if they are finished or delete them if you dont need them anymore. </p>
+        <a href="https://lucky-blancmange-e02202.netlify.app/" target="_blank" class="project-btn">Visit site<i
+            class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+
+    <div class="project-wrapper">
+      <div class="project-image-wrapper">
+        <a href="https://radiant-douhua-d9994f.netlify.app/" target="_blank">
+          <p class="badge">React</p>
+          <img src="./images/projects/quiz-app-1-sve.jpg" alt="quizzical app" class="project-image">
+        </a>
+      </div>
+      <div class="project-text-wrapper">
+        <h2 class="project-name">Quizz App</h2>
+        <p class="project-desc">A fun short quiz app that uses the free Trivia API to display questions. After answering
+          all the questions, the correct answers are shown in green and the wrong ones in red. </p>
+        <a href="https://radiant-douhua-d9994f.netlify.app/" target="_blank" class="project-btn">Visit Site<i
+            class="fa-solid fa-arrow-right"></i></a>
       </div>
     </div>
 
@@ -167,9 +170,14 @@
 
   <section class="contact-section" id="contact">
     <h1 class="contact-heading">Contact</h1>
-    <p class="contact-desc">Please reach out if you have any questions! I'm happy to jump on a video call to
-      brainstorm projects and ideas. Send me an email at jane@example.com or call me directly at +123456789</p>
+    <p class="contact-desc">Are you looking for a fast-performing and user-friendly website to represent your product or
+      business? or looking for any kind of consultation? or want to ask questions? or have some advice for me or just
+      want to say "Hi 👋" in any case feel free to Let me know. I will do my best to respond back. 😊 The quickest way
+      to reach out to me is via an email.</p>
+    <a href="mailto:vujke456@gmail.com" class="contact-mail">vujke456@gmail.com</a>
+  </section>
 
+  <foter class="foter">
     <div class="social-media-contact-section">
       <a href="#">
         <i class="fa-brands fa-facebook"></i>
@@ -179,9 +187,7 @@
       <a href="#"><i class="fa-brands fa-codepen"></i></a>
       <a href="#"><i class="fa-solid fa-at"></i></a>
     </div>
-
-  </section>
-
+  </foter>
   <script src="./portfolio.js"></script>
 </body>
 
