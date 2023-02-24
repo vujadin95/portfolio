@@ -236,6 +236,7 @@ body {
 
 .social-media-icon {
   width: 2.6rem;
+  color: var(--light-color-text);
 }
 
 .hero-introduction-text {
@@ -517,11 +518,12 @@ body {
   border-radius: 5px;
   font-weight: 700;
   cursor: pointer;
-
+  /* transition: all 0.5s; */
 }
 
 .code-about {
   color: var(--light-color-text);
+  transition: all 0.35s;
 }
 
 .skill:hover .code-about {
@@ -759,6 +761,25 @@ body {
 
 .project-btn i {
   margin-left: 10px;
+}
+
+.show-all-btn {
+  font-family: inherit;
+  font-size: 2rem;
+  font-weight: 700;
+  background-color: var(--light-color-text);
+  color: var(--dark-background-color);
+  padding: 0.5em 1.5em;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  display: block;
+  margin: 0 auto;
+  transition: all 0.35s;
+}
+
+.show-all-btn:hover {
+  box-shadow: inset 18rem 0 0 0 orangered;
 }
 
 @media (width <=1200px) {
