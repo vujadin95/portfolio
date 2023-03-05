@@ -8,6 +8,7 @@
   --dark-color-text: #1c1c1c;
   --light-color-text: #f5f5f5;
   --dark-background-color: #272935;
+  --hover-color: #ff3258;
   font-size: 10px;
 }
 
@@ -89,10 +90,14 @@ body {
   transition: all 0.3s;
 }
 
+.links-container>li>a:hover {
+  color: var(--hover-color);
+}
+
 .links-container>li>a:hover::after {
   right: 15px;
   height: 2px;
-  background: orangered;
+  background: var(--hover-color);
 }
 
 .menu-icon-wrapper {
@@ -223,7 +228,7 @@ body {
 }
 
 .social-media-link:hover {
-  background-color: orangered;
+  background-color: var(--hover-color);
 }
 
 .social-media-link:active {
@@ -274,14 +279,14 @@ body {
 }
 
 .hero-btn:hover {
-  box-shadow: inset 13em 0 0 0 orangered;
+  box-shadow: inset 13em 0 0 0 var(--hover-color);
   color: var(--light-color-text);
 }
 
 .hero-mouse-scroll {
   width: 25px;
   height: 40px;
-  border: 2px solid orangered;
+  border: 2px solid var(--hover-color);
   border-radius: 15px;
   position: absolute;
   bottom: 3%;
@@ -417,6 +422,7 @@ body {
 
 .heading-wrapper {
   text-align: center;
+  margin-bottom: 4rem;
 }
 
 .about-section-heading {
@@ -431,7 +437,7 @@ body {
 .about-section-heading::after {
   content: '';
   position: absolute;
-  background: orangered;
+  background: var(--hover-color);
   bottom: 0;
   left: 0;
   right: 100%;
@@ -442,7 +448,7 @@ body {
 .about-section-heading:hover:after {
   height: 3px;
   right: 0;
-  background-color: orangered;
+  background-color: var(--hover-color);
 }
 
 .about-section-desc {
@@ -491,7 +497,7 @@ body {
 }
 
 .about-section-contact-btn:hover {
-  box-shadow: inset 11em 0 0 0 orangered;
+  box-shadow: inset 11em 0 0 0 var(--hover-color);
   color: var(--light-color-text);
 }
 
@@ -527,7 +533,7 @@ body {
 }
 
 .skill:hover .code-about {
-  color: orangered;
+  color: var(--hover-color);
 }
 
 @media (width <=1200px) {
@@ -662,7 +668,7 @@ body {
 .projects-heading::after {
   content: '';
   position: absolute;
-  background: orangered;
+  background: var(--hover-color);
   bottom: 0;
   left: 0;
   right: 100%;
@@ -673,7 +679,7 @@ body {
 .projects-heading:hover:after {
   height: 3px;
   right: 0;
-  background-color: orangered;
+  background-color: var(--hover-color);
 }
 
 .all-projects-desc {
@@ -693,7 +699,7 @@ body {
 
 .project-image-wrapper {
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
   cursor: pointer;
   position: relative;
 }
@@ -703,7 +709,7 @@ body {
   font-weight: 700;
   position: absolute;
   right: 5px;
-  bottom: 10px;
+  top: 10px;
   padding: 0.2em 1em;
   background-color: var(--light-color-text);
   color: var(--dark-background-color);
@@ -711,11 +717,13 @@ body {
 }
 
 .project-image-wrapper:hover .badge {
-  box-shadow: inset 12rem 0 0 0 orangered;
+  box-shadow: inset 12rem 0 0 0 var(--hover-color);
 }
 
 .project-image {
   width: 100%;
+  height: max-content;
+  object-fit: contain;
 }
 
 .project-text-wrapper {
@@ -755,7 +763,7 @@ body {
 }
 
 .project-btn:hover {
-  box-shadow: inset 13em 0 0 0 orangered;
+  box-shadow: inset 13em 0 0 0 var(--hover-color);
   color: var(--light-color-text);
 }
 
@@ -767,19 +775,21 @@ body {
   font-family: inherit;
   font-size: 2rem;
   font-weight: 700;
+  text-decoration: none;
   background-color: var(--light-color-text);
   color: var(--dark-background-color);
   padding: 0.5em 1.5em;
   border-radius: 6px;
   cursor: pointer;
-  border: none;
   display: block;
+  max-width: 17rem;
   margin: 0 auto;
   transition: all 0.35s;
 }
 
 .show-all-btn:hover {
-  box-shadow: inset 18rem 0 0 0 orangered;
+  box-shadow: inset 18rem 0 0 0 var(--hover-color);
+  color: var(--light-color-text);
 }
 
 @media (width <=1200px) {
@@ -792,6 +802,11 @@ body {
     margin-bottom: 10.3rem;
   }
 
+  .project-text-wrapper {
+    justify-content: flex-start;
+    padding: 0;
+  }
+
   .projects-heading {
     font-size: 3.8rem;
   }
@@ -800,16 +815,13 @@ body {
     font-size: 1.9rem;
   }
 
-  .project-text-wrapper {
-    padding: 1.9em 0;
-  }
-
   .project-name {
     font-size: 2.65rem;
   }
 
   .project-desc {
     font-size: 1.7rem;
+    margin-bottom: 10px;
   }
 
   .project-btn {
@@ -852,6 +864,7 @@ body {
   .project-desc {
     font-size: 1.6rem;
     text-align: center;
+    margin-bottom: 1.75em;
   }
 
   .project-btn {
@@ -904,7 +917,7 @@ body {
 .contact-heading::after {
   content: '';
   position: absolute;
-  background: orangered;
+  background: var(--hover-color);
   bottom: 0;
   left: 0;
   right: 100%;
@@ -915,7 +928,7 @@ body {
 .contact-heading:hover:after {
   height: 3px;
   right: 0;
-  background-color: orangered;
+  background-color: var(--hover-color);
 }
 
 .contact-desc {
@@ -939,7 +952,7 @@ body {
 }
 
 .contact-mail:hover {
-  box-shadow: inset 17em 0 0 0 orangered;
+  box-shadow: inset 17em 0 0 0 var(--hover-color);
   color: var(--light-color-text);
 }
 
